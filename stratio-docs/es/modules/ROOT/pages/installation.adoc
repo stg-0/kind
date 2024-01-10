@@ -522,6 +522,7 @@ En este ejemplo se pueden ver las siguientes particularidades:
 ** Con personalizaciones en el disco.
 ** Con instancias tipo _spot_.
 ** Casos de distribución en AZs: balanceado y desbalanceado.
+
 [source,yaml]
 ----
 apiVersion: installer.stratio.com/v1beta1

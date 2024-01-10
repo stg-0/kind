@@ -49,7 +49,6 @@ En un *despliegue por defecto* se crean los siguientes objetos en cada proveedor
 ** 1 Volumen EBS para cada volumen persistente.
 * 1 Balanceador de carga tipo _Network_ para la exposición de _Services_ tipo Load Balancer.
 ** 1 _Listener_ por puerto para cada _Service_.
-* Volumen EBS para cada volumen persistente.
 
 === AWS no gestionado
 
