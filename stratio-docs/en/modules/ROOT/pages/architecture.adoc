@@ -62,7 +62,7 @@ In a *default deployment*, the following objects are created in each cloud provi
 * [silver]#1 default route in the routing table of each public subnet to exit to the Internet through the Internet Gateway.#
 * 1 IAM policy for the cluster nodes (_nodes.cluster-api-provider-aws.sigs.k8s.io_).
 * 1 IAM role for cluster nodes (_nodes.cluster-api-provider-aws.sigs.k8s.io_).
-
+* 2 _Security Groups_ for the _workers_ and 3 for the _control-plane_.
 * VMs for _workers_ (according to cluster descriptor and auto-scaling).
 ** 1 EBS volume for each persistent volume.
 * 1 load balancer type _Classic_ for the exposure of _Services_ type _Load Balancer_.
