@@ -58,7 +58,7 @@ In a *default deployment*, the following objects are created in each cloud provi
 ** [silver]#3 private subnets (also one per AZ).#
 * [silver]#1 NAT gateway for each public subnet.#
 * [silver]#1 Internet gateway for the VPC.#
-* [silver]#1 default route in the routing table of each public subnet to exit to the Internet through the NAT gateways.#
+* [silver]#1 default route in the routing table of each private subnet to exit to the Internet through the NAT gateways.#
 * [silver]#1 default route in the routing table of each public subnet to exit to the Internet through the Internet Gateway.#
 * 1 IAM policy for the cluster nodes (_nodes.cluster-api-provider-aws.sigs.k8s.io_).
 * 1 IAM role for cluster nodes (_nodes.cluster-api-provider-aws.sigs.k8s.io_).
