@@ -319,7 +319,7 @@ This endpoint is published to the internet, and its access is restricted with a 
 
 ==== AWS unmanaged
 
-For API Server exposure, a load balancer is created with name `<cluster_id>-apiserver` and port 6443 accessible by the public network (the assigned public IP is the same as configured in the _Kubeconfig_) and one _Target group_ with the corresponding _control-plane_ nodes.
+For access to the API Server, a load balancer is created with name `<cluster_id>-apiserver` and port 6443 accessible by the public network (the assigned public IP is the same that resolves the URL of the _Kubeconfig_) and a _Target group_ with the nodes of the corresponding _control-plane_.
 
 ==== GCP
 
