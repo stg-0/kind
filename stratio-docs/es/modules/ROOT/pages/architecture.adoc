@@ -63,7 +63,7 @@ En un *despliegue por defecto* se crean los siguientes objetos en cada proveedor
 * 1 política de IAM para los nodos del _cluster_ (_nodes.cluster-api-provider-aws.sigs.k8s.io_).
 * 1 rol de IAM para los nodos del _cluster_ (_nodes.cluster-api-provider-aws.sigs.k8s.io_).
 * 2 _Security Groups_ para los _workers_ y 3 para el _control-plane_.
-* VMs para _Workers_ (según descriptor del _cluster_ y autoescalado).
+* Máquinas virtuales para _Workers_ (según descriptor del _cluster_ y autoescalado).
 ** 1 Volumen EBS para cada volumen persistente.
 * 1 Balanceador de carga tipo _Classic_ para la exposición de _Services_ tipo Load Balancer.
 ** 1 _Listener_ por puerto para cada _Service_.
