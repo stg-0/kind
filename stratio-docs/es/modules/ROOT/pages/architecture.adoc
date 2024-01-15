@@ -65,7 +65,7 @@ En un *despliegue por defecto* se crean los siguientes objetos en cada proveedor
 * 2 _Security Groups_ para los _workers_ y 3 para el _control-plane_.
 * Máquinas virtuales para _Workers_ (según descriptor del _cluster_ y autoescalado).
 ** 1 Volumen EBS para cada volumen persistente.
-* 1 Balanceador de carga tipo _Classic_ para la exposición de _Services_ tipo Load Balancer.
+* 1 balanceador de carga tipo _Classic_ para la exposición de _Services_ tipo _Load Balancer_.
 ** 1 _Listener_ por puerto para cada _Service_.
 
 === GCP
