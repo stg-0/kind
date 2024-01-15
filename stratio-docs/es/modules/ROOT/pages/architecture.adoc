@@ -62,7 +62,7 @@ En un *despliegue por defecto* se crean los siguientes objetos en cada proveedor
 * [silver]#1 ruta por defecto en la tabla de rutas de cada _subnet_ pública para salir a internet a través del _Internet Gateway_.#
 * 1 política de IAM para los nodos del _cluster_ (_nodes.cluster-api-provider-aws.sigs.k8s.io_).
 * 1 rol de IAM para los nodos del _cluster_ (_nodes.cluster-api-provider-aws.sigs.k8s.io_).
-* 2 _Security Groups_ para los workers y 3 para el _control-plane_.
+* 2 _Security Groups_ para los _workers_ y 3 para el _control-plane_.
 * VMs para _Workers_ (según descriptor del _cluster_ y autoescalado).
 ** 1 Volumen EBS para cada volumen persistente.
 * 1 Balanceador de carga tipo _Classic_ para la exposición de _Services_ tipo Load Balancer.
