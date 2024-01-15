@@ -246,7 +246,7 @@ NOTE: The secondary CIDR assigned to the VPC for the pods must be indicated in t
 
 The CIDR of each subnet (obtained from the secondary CIDR of the VPC), must be the same as described above (with 18-bit mask), and the 3 subnets for pods must have the following tag: _sigs.k8s.io/cluster-api-provider-aws/association=secondary_.
 
-==== GCP and unmanaged AWS/Azure
+==== GCP and AWS/Azure unmanaged
 
 In these providers/flavours Calico is used as the IPAM of the CNI, this allows to be able to specify an arbitrary CIDR for the pods:
 
