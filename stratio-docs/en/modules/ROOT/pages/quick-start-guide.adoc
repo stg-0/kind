@@ -26,6 +26,8 @@
 
 NOTE: For Kubernetes versions higher than 1.26, the installation requires a custom image with necessary parameters for Elasticsearch and the ECR plugin for the _kubelet_.
 
+NOTE: In case the _cloudformation_ stack has not been previously created in the account, the `spec:security:aws:create_iam` parameter must be set to "true". Otherwise, to "false".
+
 ==== _control-plane_ nodes
 
 For this provider, the _control-plane_ will be deployed in VMs, therefore, the following options can be configured:

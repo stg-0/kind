@@ -24,9 +24,9 @@
 ** Grupos de nodos.
 ** Información necesaria para la instalación de _Stratio KEOS_.
 
-NOTE: Para versiones de Kubernetes superiores a la 1.26, la instalación requiere una imagen personalizada con parámetros necesarios para Elasticsearch y el plugin de ECR para el _kubelet_.
+NOTE: Para versiones de Kubernetes superiores a la 1.26, la instalación requiere una imagen personalizada con parámetros necesarios para Elasticsearch y el _plugin_ de ECR para el _kubelet_.
 
-NOTE: En caso de no haber creado el stack de cloudformation con anterioridad en la cuenta, se deberá de poner el parámetro spec:security:aws:create_iam a true, en caso contrario false.
+NOTE: En caso de no haber creado el _stack_ de _cloudformation_ con anterioridad en la cuenta, se deberá de poner el parámetro `spec:security:aws:create_iam` a "true". En caso contrario, a "false".
 
 ==== Nodos _control-plane_
 
