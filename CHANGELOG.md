@@ -7,7 +7,6 @@
 * [Core] Downgrade CCM to match k8s version 1.26
 * [Core] Disable nodes CIDR in Azure
 * [Internal] Add utility to upload keos installer docker images
-* [Core] Restrict the maximum number of unhealthy CP nodes in MachineHealthCheck
 * [Docs] Fix: EFS permissions
 * [Docs] Add AWS details
 * [Core] Restrict the maximum number of unhealthy CP nodes in MachineHealthCheck
