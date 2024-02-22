@@ -2,9 +2,6 @@
 
 ## 0.17.0-0.4.0 (upcoming)
 
-* [Core] Support OCI helm repositories
-* [Core] Set custom maxUnhealthy for CP and workers
-* [Core] Decouple cluster-operator chart and docker image versions
 * [Core] Support offline deployments
 * [Core] Added validation for regions
 * [Core] Added infrastructure validations for azs, vpcs, subnets and k8s versions
@@ -13,6 +10,13 @@
 * [Azure] Add priority class to NMI
 * [Core] Bump cluster api to v1.5.3
 * [Core] Enable scale from zero for node groups
+* [Core] Added new CR ClusterConfig for cluster configurations
+* [Core] Support OCI helm repositories
+* [Core] Restrict the maximum number of unhealthy nodes in MachineHealthCheck
+* [Core] Set custom maxUnhealthy for CP and workers
+* [Core] Added default retrieval of the latest cluster-operator helm chart.
+* [Core] Override the cluster-operator chart and image versions in clusterconfig
+* [AWS][EKS] Support aws load balancer controller manager
 
 ## 0.17.0-0.3.7 (2024-01-31)
 
