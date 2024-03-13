@@ -13,5 +13,6 @@
 ## Checklist
 - [ ] [PR desc] List any pull-request related to this change.
 - [ ] [PR labels] Add the corresponding labels (release, skips, cherry-pick, AT-eks-smoke, etc).
-- [ ] [Docs] Add changes to the documentation.
-- [ ] [QA] Add new unit tests according to the changes.
+- [ ] [Changelog] Add the changes to CHANGELOG.md.    
+- [ ] [Docs] Add the changes to the documentation.
+- [ ] [QA] Add the new unit tests according to the changes.
