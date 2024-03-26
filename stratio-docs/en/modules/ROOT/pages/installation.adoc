@@ -10,7 +10,6 @@ For automated provisioning in AWS/EKS, it is necessary to execute actions on var
 +
 ** xref:attachment$stratio-eks-policy.json[Download permanent permissions for EKS].
 ** xref:attachment$stratio-aws-temp-policy.json[Download temporary permissions for EKS and AWS unmanaged].
-
 +
 For EKS deployment, you must manually create the "AWSServiceRoleForAmazonEKS" role and associate to it the "AmazonEKSServiceRolePolicy" policy (created by default in AWS).
 
@@ -262,7 +261,7 @@ As an installation prerequisite, the Helm repository from which the _Cluster Ope
 
 | _url_
 | URL of the repository.
-| *OCI repositories*: oci://stratioregistry.azurecr.io/helm-repository-example + 
+| *OCI repositories*: oci://stratioregistry.azurecr.io/helm-repository-example +
 *HTTPS repositories*: https://[IP]:8080
 | No
 
@@ -964,9 +963,8 @@ Since this deployment is not enabled by default, it must be indicated with _spec
 
 To authorize the controller, we will use https://docs.aws.amazon.com/es_es/eks/latest/userguide/iam-roles-for-service-accounts.html[IAM roles for Service Accounts], which involves creating the corresponding IAM objects as indicated below:
 
-
 * Define the following environment variables:
-
++
 [source,shell]
 ----
 export AWS_ACCOUNT_ID=<account_id>
@@ -979,7 +977,7 @@ export AWS_IAM_ROLE_NAME="${AWS_EKS_CLUSTER_NAME}-lb-controller-manager"
 ----
 
 * https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html[Create the IAM role] that will be used by the _service account_ of the _aws-load-balancer-controller-manager_ deployment with the following trust policy:
-
++
 [source,console]
 ----
 $ cat << EOF > trustpolicy.json
@@ -1006,7 +1004,7 @@ $ aws iam create-role --role-name ${AWS_IAM_ROLE_NAME} --assume-role-policy-docu
 ----
 
 * https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html[Create the IAM policy] with the strictly necessary permissions:
-
++
 [source,console]
 ----
 $ cat << EOF > policy.json
@@ -1072,9 +1070,8 @@ $ aws iam create-policy --policy-name ${AWS_IAM_POLICY_NAME} --policy-document f
 ----
 
 * https://docs.aws.amazon.com/es_es/IAM/latest/UserGuide/access_policies_manage-attach-detach.html[Associate the IAM policy] with the role created earlier:
-
++
 [source,console]
 ----
 $ aws iam attach-role-policy --role-name ${AWS_IAM_ROLE_NAME} --policy-arn arn:aws:iam::${AWS_ACCOUNT_ID}:policy/${AWS_IAM_POLICY_NAME}
 ----
-
