@@ -955,7 +955,6 @@ Eventualmente, esto podría generar problemas en las peticiones en caso de fallo
 
 Para evitar este problema, se deberá modificar el _health check_ del balanceador de carga creado, utilizando el protocolo HTTPS y la ruta _/readyz_. El puerto deberá mantenerse, siendo para GCP el 443 y para Azure el 6443.
 
-
 == Despliegue de _aws-load-balancer-controller-manager_ (sólo EKS)
 
 En _clusters_ de EKS es posible desplegar un controlador (_aws-load-balancer-controller-manager_) encargado de la creación de _Elastic Load Balancers_, utilizado por objetos tales como _Ingress_ y _Service_ de tipo _LoadBalancer_.
